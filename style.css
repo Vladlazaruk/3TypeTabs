@@ -31,6 +31,8 @@ body{
   top: 0;
   left: 0;
 }
+/* ========on clear CSS tabs ============*/
+
 #tab-1:checked ~ .tab-1 { background-color:#eee;}
 #tab-1:checked ~ .content-1 {display: block;}
 
