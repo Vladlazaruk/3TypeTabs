@@ -6,7 +6,7 @@ body{
 }
 .wrapper{
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 /* === tabs === */
 .tabs__wrapper{
@@ -31,10 +31,43 @@ body{
   top: 0;
   left: 0;
 }
-/* ========on clear CSS tabs ============*/
+/* ========on clear CSS tabs used input and ~ ============*/
 
 #tab-1:checked ~ .tab-1 { background-color:#eee;}
 #tab-1:checked ~ .content-1 {display: block;}
 
 #tab-2:checked ~ .tab-2 { background-color:#eee;}
 #tab-2:checked ~ .content-2 {display: block;}
+
+/* ================================================= */
+
+/* ========== on clear CSS used :target =============*/
+
+.tabs-container{
+  display: flex;
+}
+.tabs__wrapper-2{
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.content-2{
+  display: none;
+  padding: 20px;
+  background-color:#eee;
+}
+.tab-2{
+  text-align: center;
+  color: #000;
+  padding: 20px;
+  text-decoration: none;
+  flex-grow: 1;
+}
+
+.content-2:target {
+  display: block;
+}
+
+.content-1_2:target ~ .tabs-container .tab-1_2{ background-color:#eee;}
+.content-2_2:target ~ .tabs-container .tab-2_2{ background-color:#eee;}
+/* ================================================== */
