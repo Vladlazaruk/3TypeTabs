@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- on clear CSS tabs used input and ~ -->
   <div class="wrapper">
     <div class="tabs__wrapper">
       <input class="input" type="radio" name="tabs" id="tab-1" checked>
@@ -18,6 +19,7 @@
     </div>
   </div>
 
+  <!-- on clear CSS used :target  -->
   <div class="wrapper">
     <div class="tabs__wrapper-2">
       <div id="tab-1_2" class="content-2 content-1_2">Content 1</div>
@@ -29,6 +31,20 @@
     </div>
   </div>
 
+  <!-- ====== on JS =========== -->
+  <div class="wrapper">
+    <div class="tabs">
+      <div class="tabs-triggers">
+        <a href="#tab-1_3" class="tabs-triggers__item">Tab 1</a>
+        <a href="#tab-2_3" class="tabs-triggers__item">Tab 2</a>
+      </div>
+      <div class="tabs-content">
+        <div id="tab-1_3" class="tabs-content__item">Content 1</div>
+        <div id="tab-2_3" class="tabs-content__item">Content 2</div>
+      </div>
+    </div>
+  </div>
+  
 <script src="script.js"></script>
 
 </body>

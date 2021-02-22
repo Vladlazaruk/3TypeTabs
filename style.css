@@ -71,3 +71,30 @@ body{
 .content-1_2:target ~ .tabs-container .tab-1_2{ background-color:#eee;}
 .content-2_2:target ~ .tabs-container .tab-2_2{ background-color:#eee;}
 /* ================================================== */
+
+
+/* =============== on JS ============================= */
+
+.tabs-triggers{
+  display: flex;
+}
+.tabs-triggers__item{
+  text-align: center;
+  color: #000;
+  padding: 20px;
+  text-decoration: none;
+  flex-grow: 1;
+}
+
+.tabs-content__item{
+  display: none;
+  padding: 20px;
+  background-color:#eee;
+}
+.tabs-content__item-active{
+  display: block;
+}
+.tabs-triggers__item-active{
+  background-color:#eee;
+}
+/* =================================================== */
